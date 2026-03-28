@@ -4,7 +4,8 @@
       "Bash(npm run:*)",
       "Bash(node --input-type=module --eval \"import\\(''''D:/VIBE CODING/Routine_Trigger/src/types/engine.ts''''\\).catch\\(\\(\\)=>{}\\)\")",
       "Bash(npx tsc:*)",
-      "Bash(find 'D:/VIBE CODING/Routine_Trigger/.github/agents' -type f -name *.md)"
+      "Bash(find 'D:/VIBE CODING/Routine_Trigger/.github/agents' -type f -name *.md)",
+      "Bash(npm install:*)"
     ]
   }
 }

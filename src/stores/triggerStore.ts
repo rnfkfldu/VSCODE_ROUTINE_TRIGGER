@@ -19,6 +19,8 @@ const DEFAULT_HABITS: TriggerHabit[] = [
       longestStreakStartDate: null,
     },
     weeklyCompletedCount: 0,
+    weeklyTriggerCount: 0,
+    isActive: true,
     createdAt: now(),
     updatedAt: now(),
   },

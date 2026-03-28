@@ -34,7 +34,7 @@ function buildInsightText(weeklyKpi: number | null, routineKPIs: RoutineKPIItem[
 
     lines.push(`가장 잘 된 루틴: "${best.name}" (${Math.round(best.kpi)}%)`)
 
-    if (withKpi.length > 1 && worst.routineId !== best.routineId) {
+    if (withKpi.length > 1 && worst.name !== best.name) {
       lines.push(`조금 더 노력이 필요한 루틴: "${worst.name}" (${Math.round(worst.kpi)}%)`)
     }
   }

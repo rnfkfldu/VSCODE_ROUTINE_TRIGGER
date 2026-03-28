@@ -1084,10 +1084,20 @@ export const FIRESTORE_COLLECTIONS = {
   ROUTINE_DEFINITIONS: 'routineDefinitions',
   /** 주간 루틴 플랜 컬렉션 */
   WEEKLY_ROUTINE_PLANS: 'weeklyRoutinePlans',
+  /** 주간 요일별 분배 계획 컬렉션 */
+  WEEKLY_SCHEDULE_DISTRIBUTIONS: 'weeklyScheduleDistributions',
   /** 루틴 로그 컬렉션 */
   ROUTINE_LOGS: 'routineLogs',
-  /** 주간 인사이트 컬렉션 */
+  /** 트리거 습관 정의 컬렉션 */
+  TRIGGER_HABITS: 'triggerHabits',
+  /** 트리거 습관 로그 컬렉션 */
+  TRIGGER_HABIT_LOGS: 'triggerHabitLogs',
+  /** 일간 체크인 컬렉션 */
+  DAILY_CHECK_INS: 'dailyCheckIns',
+  /** 주간 인사이트 컬렉션 (AI 분석) */
   WEEKLY_INSIGHTS: 'weeklyInsights',
+  /** 주간 리뷰 컬렉션 (사용자 회고) */
+  WEEKLY_REVIEWS: 'weeklyReviews',
 } as const;
 
 export type FirestoreCollectionKey = keyof typeof FIRESTORE_COLLECTIONS;

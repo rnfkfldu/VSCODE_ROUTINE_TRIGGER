@@ -95,6 +95,8 @@ export const useTriggerStore = create<TriggerStoreState & TriggerStoreActions>((
         longestStreakStartDate: null,
       },
       weeklyCompletedCount: 0,
+      weeklyTriggerCount: 0,
+      isActive: true,
       createdAt: now(),
       updatedAt: now(),
     }

@@ -134,14 +134,15 @@ export type RoutineType = (typeof RoutineType)[keyof typeof RoutineType];
  * 트리거 시점 유형 (Trigger Timing Type)
  * 루틴을 실행할 시점을 정의하는 유형.
  */
-export enum TriggerTimingType {
+export const TriggerTimingType = {
   /** 특정 시각에 실행. 예: 오전 7:00 */
-  SPECIFIC_TIME = 'SPECIFIC_TIME',
+  SPECIFIC_TIME: 'SPECIFIC_TIME',
   /** 특정 행동 직후에 실행. 예: 기상 직후, 식사 직후 */
-  AFTER_ACTION = 'AFTER_ACTION',
+  AFTER_ACTION: 'AFTER_ACTION',
   /** 특정 장소에 도착 시 실행. 예: 집 도착 시 */
-  LOCATION_BASED = 'LOCATION_BASED',
-}
+  LOCATION_BASED: 'LOCATION_BASED',
+} as const;
+export type TriggerTimingType = (typeof TriggerTimingType)[keyof typeof TriggerTimingType];
 
 /**
  * 루틴 트리거 정의 (Routine Trigger)

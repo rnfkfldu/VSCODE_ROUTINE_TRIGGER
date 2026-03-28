@@ -263,10 +263,11 @@ export interface WeeklyRoutinePlan {
  * - TIMER: 원터치 타이머로 기록된 시간 (TIME_BASED 루틴용)
  * - CHECKBOX: 체크박스로 기록된 완료 여부 (ACTION_BASED 루틴용)
  */
-export enum LogEntryType {
-  TIMER = 'TIMER',
-  CHECKBOX = 'CHECKBOX',
-}
+export const LogEntryType = {
+  TIMER: 'TIMER',
+  CHECKBOX: 'CHECKBOX',
+} as const;
+export type LogEntryType = (typeof LogEntryType)[keyof typeof LogEntryType];
 
 /**
  * 루틴 수행 로그 (Routine Log Entry)

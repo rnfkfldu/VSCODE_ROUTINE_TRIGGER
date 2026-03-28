@@ -124,10 +124,11 @@ export interface WeeklyAvailableTime {
  * - TIME_BASED: 누적 시간이 중요한 루틴 (독서, 코딩 공부 등)
  * - ACTION_BASED: 수행 여부 자체가 중요한 루틴 (영양제 복용, 찬물 샤워 등)
  */
-export enum RoutineType {
-  TIME_BASED = 'TIME_BASED',
-  ACTION_BASED = 'ACTION_BASED',
-}
+export const RoutineType = {
+  TIME_BASED: 'TIME_BASED',
+  ACTION_BASED: 'ACTION_BASED',
+} as const;
+export type RoutineType = (typeof RoutineType)[keyof typeof RoutineType];
 
 /**
  * 트리거 시점 유형 (Trigger Timing Type)
